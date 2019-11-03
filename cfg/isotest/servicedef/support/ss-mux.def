@@ -1,0 +1,10 @@
+<mux class="org.jpos.q2.iso.QMUX" logger="ss-log" name="ss-mux">
+ <in>ss-receive</in>
+ <out>ss-send</out>
+ <unhandled>ss-unhandled</unhandled>
+ <request-listener class="org.jpos.bsh.BSHRequestListener" logger="ss-log">
+  <property name="source" value="cfg/isotest/servicedef/support/ss.bsh" />
+  <property name="targeturl" value="http://localhost:9090/jposee" />
+ </request-listener>
+</mux>
+

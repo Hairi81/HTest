@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<channel-adaptor name='Bukioub1-adaptor'
+    class="org.jpos.q2.iso.ChannelAdaptor" logger="Q2">
+ <channel class="org.jpos.iso.channel.ASCII2BRChannel" logger="Q2"
+       packager="org.jpos.iso.packager.GenericPackager">
+ <property name="packager-config" value="cfg/isotest/packagers/base24.xml" />
+
+  <property name="host" value="123.123.123.123" />
+  <property name="port" value="232323" />
+ </channel>
+ <in>Bukioub1-send</in>
+ <out>Bukioub1-receive</out>
+ <reconnect-delay>10000</reconnect-delay>
+</channel-adaptor>
+

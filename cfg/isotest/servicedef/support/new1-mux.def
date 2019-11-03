@@ -1,0 +1,10 @@
+<mux class="org.jpos.q2.iso.QMUX" logger="new1-log" name="new1-mux">
+ <in>new1-receive</in>
+ <out>new1-send</out>
+ <unhandled>new1-unhandled</unhandled>
+ <request-listener class="org.jpos.bsh.BSHRequestListener" logger="new1-log">
+  <property name="source" value="cfg/requestlisteners/new1.bsh" />
+  <property name="targeturl" value="" />
+ </request-listener>
+</mux>
+

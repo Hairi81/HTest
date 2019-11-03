@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.RotateLogListener">
+<log realm="Q2.system" at="Fri Mar 11 22:04:41 ICT 2011.879">
+  <info>
+    Q2 started, deployDir=D:\Sinergi\jposee_webtest\build\coredeploy2\deploy
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:04:42 ICT 2011.9">
+  <info>
+    new classloader [22c95b] has been created
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:04:42 ICT 2011.33">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\01_start.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:04:42 ICT 2011.69">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\02_status_heartbeat.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:04:42 ICT 2011.98">
+  <warn>
+    deploy
+    <exception name="org/hibernate/HibernateException">
+    java.lang.NoClassDefFoundError: org/hibernate/HibernateException
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanInstantiator.findConstructor(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanInstantiator.instantiate(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanInstantiator.instantiate(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanInstantiator.instantiate(Unknown Source)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.instantiate(Unknown Source)
+	at org.jpos.q2.QFactory.instantiate(QFactory.java:68)
+	at org.jpos.q2.Q2.deploy(Q2.java:422)
+	at org.jpos.q2.Q2.deploy(Q2.java:255)
+	at org.jpos.q2.Q2.run(Q2.java:164)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: org.hibernate.HibernateException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 14 more
+    </exception>
+  </warn>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:04:42 ICT 2011.200">
+  <warn>
+    Tidying D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\02_status_heartbeat.xml out of the way, by adding .ENV
+    It will be called: D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\02_status_heartbeat.xml.ENV.ENV see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:04:42 ICT 2011.229">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\90_jetty.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:04:43 ICT 2011.296">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\99_sysmon.xml
+  </info>
+</log>
+<log realm="jetty" at="Fri Mar 11 22:04:47 ICT 2011.775">
+  <warn>
+    start
+    <exception name="Address already in use: JVM_Bind">
+    java.net.BindException: Address already in use: JVM_Bind
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at javax.net.ssl.SSLServerSocket.<init>(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLServerSocketImpl.<init>(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLServerSocketFactoryImpl.createServerSocket(Unknown Source)
+	at org.mortbay.jetty.security.SslSocketConnector.newServerSocket(SslSocketConnector.java:425)
+	at org.mortbay.jetty.bio.SocketConnector.open(SocketConnector.java:73)
+	at org.mortbay.jetty.AbstractConnector.doStart(AbstractConnector.java:283)
+	at org.mortbay.jetty.bio.SocketConnector.doStart(SocketConnector.java:147)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.Server.doStart(Server.java:235)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.jpos.q2.jetty.Jetty6.startService(Jetty6.java:42)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(Unknown Source)
+	at com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(Unknown Source)
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(Unknown Source)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:178)
+	at org.jpos.q2.Q2.start(Q2.java:459)
+	at org.jpos.q2.Q2.deploy(Q2.java:271)
+	at org.jpos.q2.Q2.run(Q2.java:164)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="Fri Mar 11 22:04:47 ICT 2011.914">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="Fri Mar 11 22:04:47 ICT 2011.934">
+  <info>
+    <release>1.6.8 $Revision: 2936 $</release>
+    <memory>
+       freeMemory=9972992
+      totalMemory=16318464
+      inUseMemory=6345472
+    </memory>
+    <threads>
+            delay=0 ms
+          threads=21
+            Thread[Reference Handler,10,system]
+            Thread[Finalizer,8,system]
+            Thread[Signal Dispatcher,9,system]
+            Thread[Attach Listener,5,system]
+            Thread[Thread-0,5,main]
+            Thread[DestroyJavaVM,5,main]
+            Thread[Timer-0,5,main]
+            Thread[Timer-1,5,main]
+            Thread[btpool0-0,5,main]
+            Thread[btpool0-1,5,main]
+            Thread[btpool0-2,5,main]
+            Thread[btpool0-3,5,main]
+            Thread[btpool0-4,5,main]
+            Thread[btpool0-5,5,main]
+            Thread[btpool0-6,5,main]
+            Thread[btpool0-7 - Acceptor1 SelectChannelConnector@0.0.0.0:9090,5,main]
+            Thread[btpool0-8,5,main]
+            Thread[btpool0-9 - Acceptor0 SelectChannelConnector@0.0.0.0:9090,5,main]
+            Thread[Timer-2,5,main]
+            Thread[Timer-3,5,main]
+            Thread[Store default Spool Thread,5,main]
+            Thread[Thread-17,5,main]
+            Thread[Timer-4,5,main]
+            Thread[Timer-5,5,main]
+            Thread[SystemMonitor,5,main]
+    </threads>
+    --- name-registrar ---
+      logger.Q2: org.jpos.util.Logger
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:04:59 ICT 2011.723">
+  <info>
+    shutting down (hook)
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:00 ICT 2011.458">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\99_sysmon.xml
+  </trace>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="Fri Mar 11 22:05:00 ICT 2011.459">
+  <info>
+    Stopping SystemMonitor
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:00 ICT 2011.461">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:00 ICT 2011.463">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\90_jetty.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:00 ICT 2011.465">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\90_jetty.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:00 ICT 2011.467">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\01_start.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:00 ICT 2011.469">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\01_start.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:00 ICT 2011.472">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\00_logger.xml
+  </trace>
+</log>
+</logger>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.RotateLogListener">
+<log realm="Q2.system" at="Fri Mar 11 22:05:10 ICT 2011.539">
+  <info>
+    Q2 started, deployDir=D:\Sinergi\jposee_webtest\build\coredeploy2\deploy
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:10 ICT 2011.600">
+  <info>
+    new classloader [1d1acd3] has been created
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:10 ICT 2011.607">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\01_start.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:10 ICT 2011.621">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\90_jetty.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:11 ICT 2011.532">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\99_sysmon.xml
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="Fri Mar 11 22:05:15 ICT 2011.176">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="Fri Mar 11 22:05:15 ICT 2011.179">
+  <info>
+    <release>1.6.8 $Revision: 2936 $</release>
+    <memory>
+       freeMemory=10202624
+      totalMemory=16318464
+      inUseMemory=6115840
+    </memory>
+    <threads>
+            delay=0 ms
+          threads=21
+            Thread[Reference Handler,10,system]
+            Thread[Finalizer,8,system]
+            Thread[Signal Dispatcher,9,system]
+            Thread[Attach Listener,5,system]
+            Thread[Thread-0,5,main]
+            Thread[DestroyJavaVM,5,main]
+            Thread[Timer-0,5,main]
+            Thread[Timer-1,5,main]
+            Thread[btpool0-0,5,main]
+            Thread[btpool0-1,5,main]
+            Thread[btpool0-2,5,main]
+            Thread[btpool0-3,5,main]
+            Thread[btpool0-4 - Acceptor1 SelectChannelConnector@0.0.0.0:9090,5,main]
+            Thread[btpool0-5 - Acceptor0 SelectChannelConnector@0.0.0.0:9090,5,main]
+            Thread[btpool0-6,5,main]
+            Thread[btpool0-7,5,main]
+            Thread[btpool0-8,5,main]
+            Thread[btpool0-9 - Acceptor0 SslSocketConnector@0.0.0.0:9292,5,main]
+            Thread[Timer-2,5,main]
+            Thread[Timer-3,5,main]
+            Thread[Store default Spool Thread,5,main]
+            Thread[Thread-17,5,main]
+            Thread[Timer-4,5,main]
+            Thread[Timer-5,5,main]
+            Thread[SystemMonitor,5,main]
+    </threads>
+    --- name-registrar ---
+      logger.Q2: org.jpos.util.Logger
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:55 ICT 2011.432">
+  <info>
+    new classloader [1fa681c] has been created
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:55 ICT 2011.474">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleclient1-log.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:55 ICT 2011.551">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleclient1-mux.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:55 ICT 2011.629">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleclient1.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:55 ICT 2011.753">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleserver1-log.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:05:55 ICT 2011.794">
+  <info>
+    deploy:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleserver1.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:06 ICT 2011.218">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleclient1-log.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:06 ICT 2011.273">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleclient1-log.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:06 ICT 2011.330">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleclient1-mux.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:06 ICT 2011.393">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleclient1-mux.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:06 ICT 2011.423">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleclient1.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:06 ICT 2011.499">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleclient1.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:06 ICT 2011.608">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleserver1-log.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:06 ICT 2011.687" lifespan="2ms">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleserver1-log.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:06 ICT 2011.751" lifespan="1ms">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleserver1.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:06 ICT 2011.836">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\sampleserver1.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:06:09 ICT 2011.478">
+  <info>
+    new classloader [ed32c4] has been created
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:07:04 ICT 2011.869">
+  <info>
+    shutting down (hook)
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:07:07 ICT 2011.149">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\99_sysmon.xml
+  </trace>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="Fri Mar 11 22:07:07 ICT 2011.166">
+  <info>
+    Stopping SystemMonitor
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:07:07 ICT 2011.185">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:07:07 ICT 2011.200">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\90_jetty.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:07:07 ICT 2011.215">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\90_jetty.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:07:07 ICT 2011.229">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\01_start.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:07:07 ICT 2011.243">
+  <info>
+    undeployed:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\01_start.xml
+  </info>
+</log>
+<log realm="Q2.system" at="Fri Mar 11 22:07:07 ICT 2011.258">
+  <trace>
+    undeploying:D:\Sinergi\jposee_webtest\build\coredeploy2\deploy\00_logger.xml
+  </trace>
+</log>
+</logger>

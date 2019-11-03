@@ -1,0 +1,10 @@
+<mux class="org.jpos.q2.iso.QMUX" logger="newstuff-log" name="newstuff-mux">
+ <in>newstuff-receive</in>
+ <out>newstuff-send</out>
+ <unhandled>newstuff-unhandled</unhandled>
+ <request-listener class="org.jpos.bsh.BSHRequestListener" logger="newstuff-log">
+  <property name="source" value="cfg/isotest/servicedef/support/newstuff.bsh" />
+  <property name="targeturl" value="localhost" />
+ </request-listener>
+</mux>
+

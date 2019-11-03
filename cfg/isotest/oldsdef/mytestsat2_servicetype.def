@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<server class="org.jpos.q2.iso.QServer" logger="Q2"
+  name="mytestsat2">
+ <attr name="port" type="java.lang.Integer">123</attr>
+<channel name="post.channel"  class="ASCIIChannel"
+                                    packager="org.jpos.iso.packager.GenericPackager" logger="Q2">
+ <property name="packager-config" value="cfg/isotest/packagers/europay.xml" />
+
+ </channel>
+ <request-listener class="org.jpos.bsh.BSHRequestListener" logger="Q2">
+  <property name="source" value="cfg/serversimulator3.bsh" />
+ </request-listener>
+<in>mytestsat2-send</in>
+ <out>mytestsat2-receive</out>
+
+
+</server>

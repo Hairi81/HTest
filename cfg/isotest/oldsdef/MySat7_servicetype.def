@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<server class="org.jpos.q2.iso.QServer" logger="Q2"
+  name="MySat7">
+ <attr name="port" type="java.lang.Integer">4433</attr>
+<channel name="post.channel"  class="ASCIIChannel"
+                                    packager="org.jpos.iso.packager.GenericPackager" logger="Q2">
+ <property name="packager-config" value="cfg/isotest/packagers/base1.xml" />
+
+ </channel>
+ <request-listener class="org.jpos.bsh.BSHRequestListener" logger="Q2">
+  <property name="source" value="cfg/serversimulator3.bsh" />
+ </request-listener>
+<in>MySat7-send</in>
+ <out>MySat7-receive</out>
+
+
+</server>

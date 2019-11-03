@@ -1,0 +1,10 @@
+<mux class="org.jpos.q2.iso.QMUX" logger="sea-log" name="sea-mux">
+ <in>sea-receive</in>
+ <out>sea-send</out>
+ <unhandled>sea-unhandled</unhandled>
+ <request-listener class="org.jpos.bsh.BSHRequestListener" logger="sea-log">
+  <property name="source" value="cfg/isotest/servicedef/support/sea.bsh" />
+  <property name="targeturl" value="" />
+ </request-listener>
+</mux>
+

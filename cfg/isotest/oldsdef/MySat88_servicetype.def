@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<server class="org.jpos.q2.iso.QServer" logger="Q2"
+  name="MySat88">
+ <attr name="port" type="java.lang.Integer">8888</attr>
+<channel name="post.channel"  class="channel2"
+                                    packager="org.jpos.iso.packager.GenericPackager" logger="Q2">
+ <property name="packager-config" value="cfg/isotest/packagers/base24.xml" />
+
+ </channel>
+ <request-listener class="org.jpos.bsh.BSHRequestListener" logger="Q2">
+  <property name="source" value="cfg/serversimulator3.bsh" />
+ </request-listener>
+<in>MySat88-send</in>
+ <out>MySat88-receive</out>
+
+
+</server>

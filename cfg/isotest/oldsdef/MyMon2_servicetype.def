@@ -1,0 +1,18 @@
+                <?xml version="1.0" ?>
+                  <server class="org.jpos.q2.iso.QServer" logger="Q2"
+                    name="MyMon2">
+                   <attr name="port" type="java.lang.Integer">2233  </attr>
+                  <channel name="post.channel"  class="channel2"
+                                                      packager="org.jpos.iso.packager.GenericPackager" logger="Q2">
+                   <property name="packager-config" value="cfg/isotest/packagers/vapvip.xml" />
+                   <property name="channel-config" value="cfg/isotest/channels/channel2.bsh" />
+
+                   </channel>
+                   <request-listener class="org.jpos.bsh.BSHRequestListener" logger="Q2">
+                    <property name="source" value="cfg/serversimulator3.bsh" />
+                   </request-listener>
+                  <in>MyMon2-send</in>
+                   <out>MyMon2-receive</out>
+
+
+                  </server>

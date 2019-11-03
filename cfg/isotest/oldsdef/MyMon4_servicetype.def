@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<server class="org.jpos.q2.iso.QServer" logger="Q2"
+  name="MyMon4">
+ <attr name="port" type="java.lang.Integer">224455</attr>
+<channel name="post.channel"  class="org.jpos.iso.channel.ASCII2BChannel"
+                                    packager="org.jpos.iso.packager.GenericPackager" logger="Q2">
+ <property name="packager-config" value="cfg/isotest/packagers/base24.xml" />
+
+ </channel>
+ <request-listener class="org.jpos.bsh.BSHRequestListener" logger="Q2">
+  <property name="source" value="cfg/serversimulator3.bsh" />
+ </request-listener>
+<in>MyMon4-send</in>
+ <out>MyMon4-receive</out>
+
+
+</server>

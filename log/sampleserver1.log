@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.RotateLogListener">
+<log realm="sampleserver1.server" at="Fri Mar 11 22:05:56 ICT 2011.173" lifespan="1ms">
+  <iso-server>
+    listening on port 3456
+  </iso-server>
+</log>
+<log realm="sampleserver1.server.session/127.0.0.1" at="Fri Mar 11 22:05:56 ICT 2011.682" lifespan="1ms">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:62833" at="Fri Mar 11 22:06:06 ICT 2011.527" lifespan="9822ms">
+  <receive>
+    <peer-disconnect>Connection reset</peer-disconnect>
+  </receive>
+</log>
+<log realm="sampleserver1.server.session/127.0.0.1" at="Fri Mar 11 22:06:06 ICT 2011.616">
+  <session-end/>
+</log>
+</logger>

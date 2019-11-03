@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<server class="org.jpos.q2.iso.QServer" logger="Q2"
+  name="MyMonday1">
+ <attr name="port" type="java.lang.Integer">232323</attr>
+<channel name="post.channel"  class="channel2"
+                                    packager="org.jpos.iso.packager.GenericPackager" logger="Q2">
+ <property name="packager-config" value="cfg/isotest/packagers/base24.xml" />
+
+ </channel>
+ <request-listener class="org.jpos.bsh.BSHRequestListener" logger="Q2">
+  <property name="source" value="cfg/serversimulator3.bsh" />
+ </request-listener>
+<in>MyMonday1-send</in>
+ <out>MyMonday1-receive</out>
+
+
+</server>

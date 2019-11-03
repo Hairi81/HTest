@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<channel-adaptor name='sampleclient1-adaptor'
+    class="org.jpos.q2.iso.ChannelAdaptor" logger="sampleclient1-log">
+ <channel class="org.jpos.iso.channel.ASCIIChannel" logger="sampleclient1-log"
+       packager="org.jpos.iso.packager.GenericPackager">
+ <property name="packager-config" value="cfg/isotest/packagers/base1.xml" />
+
+  <property name="host" value="localhost" />
+  <property name="port" value="3456" />
+ </channel>
+ <in>sampleclient1-send</in>
+ <out>sampleclient1-receive</out>
+ <reconnect-delay>10000</reconnect-delay>
+</channel-adaptor>
+

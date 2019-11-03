@@ -1,0 +1,10 @@
+<mux class="org.jpos.q2.iso.QMUX" logger="sampleclient1-log" name="sampleclient1-mux">
+ <in>sampleclient1-receive</in>
+ <out>sampleclient1-send</out>
+ <unhandled>sampleclient1-unhandled</unhandled>
+ <request-listener class="org.jpos.bsh.BSHRequestListener" logger="sampleclient1-log">
+  <property name="source" value="cfg/isotest/servicedef/support/sampleclient1.bsh" />
+  <property name="targeturl" value="http://localhost:9090/jposee" />
+ </request-listener>
+</mux>
+

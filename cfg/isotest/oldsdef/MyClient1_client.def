@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<channel-adaptor name='MyClient1-adaptor'
+    class="org.jpos.q2.iso.ChannelAdaptor" logger="Q2">
+ <channel class="org.jpos.ee.action.isotest.HarBSHChannel" logger="Q2"
+       packager="org.jpos.iso.packager.GenericPackager">
+ <property name="packager-config" value="cfg/isotest/packagers/base24.xml" />
+  <property name="channel-config" value="cfg/isotest/channels/channel2.bsh" />
+
+
+  <property name="host" value="<destAddr>" />
+  <property name="port" value="12342" />
+ </channel>
+ <in>MyClient1-send</in>
+ <out>MyClient1-receive</out>
+ <reconnect-delay>10000</reconnect-delay>
+</channel-adaptor>
+

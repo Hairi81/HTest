@@ -1,0 +1,3 @@
+Custom Channel ASCII 2byte header lenght XX
+Example :
+message length = 200 Header = C8

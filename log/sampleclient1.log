@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.RotateLogListener">
+<log realm="channel/127.0.0.1:3456" at="Fri Mar 11 22:05:56 ICT 2011.678" lifespan="612ms">
+  <connect>
+    localhost:3456
+  </connect>
+</log>
+</logger>
